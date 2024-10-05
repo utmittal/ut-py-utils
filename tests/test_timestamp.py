@@ -2,7 +2,7 @@ from datetime import datetime, date
 
 import pytest
 
-from timestamp import to_yyyymmdd_str, from_yyyymmdd_str
+from ututils.timestamp import to_yyyymmdd_str, from_yyyymmdd_str
 
 
 def test_to_yyyymmdd_str_from_basic_datetime():
