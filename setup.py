@@ -11,9 +11,6 @@ from shutil import rmtree
 
 from setuptools import find_packages, setup, Command
 
-with open('requirements.txt', 'r') as f:
-    requirements = [r.strip().split('==')[0] for r in f.readlines()]
-
 # Package meta-data.
 NAME = 'ututil'
 DESCRIPTION = 'Common utilities for my personal projects.'
@@ -24,7 +21,7 @@ REQUIRES_PYTHON = '>=3.12.0'
 VERSION = '0.1.0'
 
 # What packages are required for this module to be executed?
-REQUIRED = requirements
+REQUIRED = ['termcolor']
 
 # What packages are optional?
 EXTRAS = {
